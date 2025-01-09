@@ -14,12 +14,12 @@ describe('LinkChecker', () => {
 
     // FIXME
     test('should return true for valid URL with http', () => {
-        expect(linkChecker.isValidUrl('http://www.example.com'))
+        expect(linkChecker.isValidUrl('http://www.example.com')).toBeTruthy()
     })
 
     // FIXME
     test('should return false for invalid URL with no protocol', () => {
-        expect(linkChecker.isValidUrl('www.example.com')).toBeNaN()
+        expect(linkChecker.isValidUrl('www.example.com')).toBeFalsy()
     })
 
     // FIXME:
