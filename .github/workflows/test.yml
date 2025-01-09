@@ -1,9 +1,9 @@
 name: Test (Run Tests)
 
 on:
-  pull request:
-     branches:
-       - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
   test:
@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        user: actions/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-            node-version: "22.x"
+          node-version: "22.x"
 
       - name: Setup dependencies
         run: npm install
