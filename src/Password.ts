@@ -11,6 +11,7 @@ export function calculatePasswordStrength(password: string): string {
   if (/[A-Z]/.test(password)) strength += 1;
   // Check for special characters
   if (/[\W_]/.test(password)) strength += 1;
+  console.log(strength);
   // Determine password strength level based on strength score
   if (strength <= 2) {
     return "Very Weak";
