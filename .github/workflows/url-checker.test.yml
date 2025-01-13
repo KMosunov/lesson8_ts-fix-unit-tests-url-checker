@@ -1,4 +1,4 @@
-name: Test (Run Tests)
+name: Url-checker tests
 
 on:
   pull_request:
